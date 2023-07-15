@@ -327,7 +327,7 @@ public:
         } return {};
 }
     iterator Erase(const_iterator pos)/*noexcept(std::is_nothrow_move_assignable_v<T>)*/{
-        if(pos >= begin() && pos <= end()){
+        if(pos >= begin() && pos < end()){
             size_t index = pos - begin();
             std::move(begin() + index + 1, end(), begin() + index);
             std::destroy_at(end() - 1);
