@@ -32,7 +32,7 @@
  - EmplaceBack
  - Emplace
  - Erase
-Пример использования в файле main.cpp
+# Пример использования в файле main.cpp
 
 # Требования:
 -std=c++17
